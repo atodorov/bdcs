@@ -8,7 +8,7 @@ addons:
     - sourceline: 'deb http://us-central1.gce.archive.ubuntu.com/ubuntu artful main universe'
     - sourceline: 'deb http://us-central1.gce.archive.ubuntu.com/ubuntu artful-updates main universe'
     packages:
-#    - apt
+    - apt # workaround for relocation error in libapt-private.so.0.0
 #    - dpkg
     - util-linux # update to work around Debian #817857
     - liblzma-dev
