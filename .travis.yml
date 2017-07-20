@@ -8,8 +8,8 @@ addons:
     - sourceline: 'deb http://us-central1.gce.archive.ubuntu.com/ubuntu artful main universe'
     - sourceline: 'deb http://us-central1.gce.archive.ubuntu.com/ubuntu artful-updates main universe'
     packages:
-    - apt
-    - dpkg
+#    - apt
+#    - dpkg
     - util-linux # update to work around Debian #817857
     - liblzma-dev
     - zlib1g-dev
