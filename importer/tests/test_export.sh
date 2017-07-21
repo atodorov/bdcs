@@ -141,7 +141,7 @@ fi
 
 # conflict is in libcmpiCppImpl0 which is the second package in the list
 # make sure tog-pegasus wins (HEAD~1)
-COMMIT=`ostree --repo=$CS_REPO log master | grep 'commit ' | head -n 2 | tail -n 1`
+COMMIT=`ostree --repo=$CS_REPO log master | grep 'commit ' | head -n 2 | tail -n 1 | sed 's/commit //'`
 compare_ostree $CS_REPO $COMMIT $OSTREE_DIR $EXPORT_DIR
 
 sudo rm -rf $EXPORT_DIR $OSTREE_DIR
