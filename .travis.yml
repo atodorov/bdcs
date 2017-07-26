@@ -37,7 +37,7 @@ before_install:
   - |
         # NOTE: When you update libostree version clear the cache from
         # https://travis-ci.org/weldr/bdcs-api-rs/caches
-        if [ ! -d ./ostree ]; then
+        if [ ! -f ./ostree/Makefile ]; then
             git clone --recurse-submodules --branch v2017.8 https://github.com/ostreedev/ostree.git
             cd ./ostree
             # temporary fix, https://github.com/ostreedev/ostree/pull/1007
