@@ -29,7 +29,7 @@ rlJournalStart
 
     rlPhaseStartTest "Depsolve sanity"
         rlLogInfo "Depsolve and download all the RPMs for httpd via DNF"
-        rlRun "sudo dnf install -y --nogpgcheck --releasever=26 --downloadonly --downloaddir=$DNF_DOWNLOAD --installroot=$DNF_ROOT httpd"
+        rlRun "sudo dnf install -y --nogpgcheck --releasever=27 --downloadonly --downloaddir=$DNF_DOWNLOAD --installroot=$DNF_ROOT httpd"
 
         rlLogInfo "Import all downloaded RPMs"
         for F in $DNF_DOWNLOAD/*.rpm; do
